@@ -20,13 +20,24 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'cityop_wordpress');
 
-/** MySQL database username */
-define('DB_USER', 'root');
+if ($_SERVER['SERVER_NAME'] === "192.168.33.10") {
+	define('DB_NAME', 'cityop_wordpress');
 
-/** MySQL database password */
-define('DB_PASSWORD', 'root');
+	/** MySQL database username */
+	define('DB_USER', 'root');
+
+	/** MySQL database password */
+	define('DB_PASSWORD', 'root');
+} else{
+	define('DB_NAME', 'cityopdb');
+
+	/** MySQL database username */
+	define('DB_USER', 'cityop');
+
+	/** MySQL database password */
+	define('DB_PASSWORD', '2pJXbEXxjc9LykPg');
+}
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

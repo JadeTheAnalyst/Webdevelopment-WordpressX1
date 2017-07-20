@@ -740,6 +740,10 @@ body #main .entry-title {
   width: 100%;
   float: none;
 }
+/* line 31, sass/pages/_home.scss */
+#main .panel-content .recent-posts a {
+  font-size: 14px;
+}
 
 /* line 1, sass/pages/_events.scss */
 .event {

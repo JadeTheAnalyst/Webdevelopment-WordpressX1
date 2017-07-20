@@ -27,10 +27,16 @@ $post_eventbrite_id = get_field( 'eventbrite_id');
 <article class="event" id="event-<?= $post->post_name;?>">
 	<h1 class="event-title"><?php echo $post->post_title;?></h1>
 <!-- 	<h2 class="event-subtitle">by John C. Maxwell</h2> -->
+	
+	<?php if($post_formatted_date != ''){?>
 	<div class="event-detail event-date"><?=$post_formatted_date;?></div>
 	<div class="event-detail event-time"><?= $post_start_time;?> to <?= $post_end_time;?></div>
-	<div class="event-detail event-address"><?= $post_address;?></div>
+	<?php } ?>
 	
+	<?php if($post_address != ''){?>
+	<div class="event-detail event-address"><?= $post_address;?></div>
+	<?php } ?>
+
 	<div class="cta-wrapper">
 		<div class="col">
 			<a href="https://www.eventbrite.com/e/<?= $post_eventbrite_id;?>" target="_blank" class="cta primary">Register Now</a>
