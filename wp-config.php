@@ -22,6 +22,9 @@
 /** The name of the database for WordPress */
 
 if ($_SERVER['SERVER_NAME'] === "192.168.33.10") {
+	/** MySQL hostname */
+	define('DB_HOST', 'localhost');
+
 	define('DB_NAME', 'cityop_wordpress');
 
 	/** MySQL database username */
@@ -30,6 +33,9 @@ if ($_SERVER['SERVER_NAME'] === "192.168.33.10") {
 	/** MySQL database password */
 	define('DB_PASSWORD', 'root');
 } else{
+	/** MySQL hostname */
+	define('DB_HOST', 'mysql.cityofpotentials.com');
+
 	define('DB_NAME', 'cityopdb');
 
 	/** MySQL database username */
@@ -38,9 +44,6 @@ if ($_SERVER['SERVER_NAME'] === "192.168.33.10") {
 	/** MySQL database password */
 	define('DB_PASSWORD', '2pJXbEXxjc9LykPg');
 }
-
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
