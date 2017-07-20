@@ -1,0 +1,33 @@
+#main{
+    .post-77{
+        .entry-content{
+            .btn{
+                display:none;
+            }
+        }
+        .event-date, .event-time, .event-address{
+            font-size:14px;
+        }
+    }
+	.panel-content{
+		.wrap{
+			padding-top:2em;
+			padding-bottom:2em;
+            font-size:1.125em;  
+			.cta-wrapper{
+                .col{
+                    @include span(6 of 12);
+                    text-align: right;
+                    &:last-child{
+                        text-align:left;
+                        @include last;
+                    }
+                }
+            } 
+		}
+        .recent-posts{
+            width:100%;
+            float:none;
+        }
+	}
+} 

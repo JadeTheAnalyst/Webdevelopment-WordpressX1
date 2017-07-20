@@ -1,0 +1,39 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Typography
+ * 2.0 - Layout
+ */
+
+/**
+ * 1.0 - Typography
+ */
+
+h1,h2,h3,h4,h5,h6{
+	padding:0;
+	margin:0;
+}
+
+.site-branding a:hover, .site-branding a:focus{
+	opacity:1;
+}
+
+/**
+ * 2.0 Layout
+ */
+.page{
+    #content.site-content{
+        padding:0;
+    }
+}
+
+body.page-two-column{
+	#primary{
+		#main{
+			.entry-header, .entry-content{
+				width:100%;
+				float:none;
+			}
+		}
+	}
+}
