@@ -60,7 +60,7 @@ function query_featured_event(){
         'meta_key' => 'event_date',
         'meta_type' => 'DATETIME',
         'orderby' => 'meta_value',
-        'order' => 'ASC',
+        'order' => 'DESC',
     );
     $post_query = new WP_Query($args);
     return $post_query;
@@ -82,7 +82,7 @@ function query_promotable_events(){
         'meta_key' => 'event_date',
         'meta_type' => 'DATETIME',
         'orderby' => 'meta_value',
-        'order' => 'ASC',
+        'order' => 'DESC',
     );
     $post_query = new WP_Query($args);
     return $post_query;
