@@ -105,7 +105,7 @@ function query_front_page_events_panel(){
         'meta_key' => 'event_date',
         'meta_type' => 'DATETIME',
         'orderby' => 'meta_value',
-        'order' => 'ASC',
+        'order' => 'DESC',
     );
     $post_query = new WP_Query($args);
     return $post_query;
