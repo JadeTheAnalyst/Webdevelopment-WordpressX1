@@ -787,8 +787,9 @@ body #main .entry-title {
 /* line 13, sass/pages/_events.scss */
 .event .event-description {
   margin-top: 1.250em;
+  margin-bottom: 1.250em;
 }
-/* line 15, sass/pages/_events.scss */
+/* line 16, sass/pages/_events.scss */
 .event .event-description .description-header {
   font-weight: bold;
   margin-bottom: 0.625em;
