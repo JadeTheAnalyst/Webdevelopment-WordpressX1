@@ -11,6 +11,7 @@ $post_start_time = get_field( 'event_start_time');
 $post_end_time = get_field( 'event_end_time');
 $post_address = get_field('event_location');
 $post_eventbrite_id = get_field('eventbrite_id');
+$post_content = get_the_content();
 ?>
 <article class="event" id="event-<?= $post->post_name;?>">
 
@@ -31,7 +32,7 @@ $post_eventbrite_id = get_field('eventbrite_id');
 	<?php if ($post_content != ''){?>
 	<div class="event-description">
 		<div class="description-header">About this event</div>
-		<div class="description-body"><?=$post_content?></div>
+		<div class="description-body"><?php the_content();?></div>
 	</div>
 	<?php } ?>
 
