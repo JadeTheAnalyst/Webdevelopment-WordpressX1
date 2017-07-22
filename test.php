@@ -1,0 +1,1 @@
+<h1><?php echo $_SERVER['SERVER_NAME'];?> </h1>
