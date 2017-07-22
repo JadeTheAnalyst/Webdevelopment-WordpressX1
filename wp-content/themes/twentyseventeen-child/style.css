@@ -461,35 +461,40 @@ body #main .entry-content .entry-title {
   margin: 1.111em 0;
 }
 
+/* line 38, sass/_common.scss */
+h1 {
+  font-weight: 600;
+}
+
 /**
  * 2.0 Post/Page Headers
  */
-/* line 42, sass/_common.scss */
+/* line 45, sass/_common.scss */
 ul#top-menu {
   text-align: center;
 }
 
-/* line 46, sass/_common.scss */
+/* line 49, sass/_common.scss */
 #masthead .wrap {
   text-align: center;
 }
 
-/* line 50, sass/_common.scss */
+/* line 53, sass/_common.scss */
 .custom-header-media:before {
   background: transparent;
 }
 
-/* line 54, sass/_common.scss */
+/* line 57, sass/_common.scss */
 #wp-custom-header-video {
   filter: saturate(2);
 }
 
-/* line 58, sass/_common.scss */
+/* line 61, sass/_common.scss */
 #wp-custom-header-video-button {
   display: none;
 }
 
-/* line 64, sass/_common.scss */
+/* line 67, sass/_common.scss */
 .site-branding-text.blue .repeat-img {
   background-image: url('/wp-content/themes/twentyseventeen-child/images/city-scape-repeat-blue.png?1500745328');
   background-size: 100%;
@@ -499,7 +504,7 @@ ul#top-menu {
   height: 71px;
 }
 @media (min-width: 0) and (max-width: 767px) {
-  /* line 64, sass/_common.scss */
+  /* line 67, sass/_common.scss */
   .site-branding-text.blue .repeat-img {
     height: 47px;
   }
@@ -508,66 +513,66 @@ ul#top-menu {
 /**
  * 3.0 Header Event Takeover
  */
-/* line 85, sass/_common.scss */
+/* line 88, sass/_common.scss */
 .page .event-takeover {
   color: #FFFFFF;
   text-align: center;
 }
-/* line 91, sass/_common.scss */
+/* line 94, sass/_common.scss */
 .page .event-takeover article.event {
   border: none;
 }
-/* line 93, sass/_common.scss */
+/* line 96, sass/_common.scss */
 .page .event-takeover article.event .event-detail {
   font-size: 0.778em;
 }
-/* line 96, sass/_common.scss */
+/* line 99, sass/_common.scss */
 .page .event-takeover article.event .event-title {
   font-size: 3em;
   color: #FFFFFF;
 }
-/* line 100, sass/_common.scss */
+/* line 103, sass/_common.scss */
 .page .event-takeover article.event .event-subtitle {
   color: #FFFFFF;
   font-size: 2em;
 }
-/* line 104, sass/_common.scss */
+/* line 107, sass/_common.scss */
 .page .event-takeover article.event .event-date {
   font-size: 1em;
 }
-/* line 107, sass/_common.scss */
+/* line 110, sass/_common.scss */
 .page .event-takeover article.event .cta-wrapper {
   margin-top: 1.250em;
   overflow: auto;
 }
 
 @media (min-width: 0) and (max-width: 767px) {
-  /* line 117, sass/_common.scss */
+  /* line 120, sass/_common.scss */
   .page .event-takeover {
     font-size: 14px;
   }
-  /* line 121, sass/_common.scss */
+  /* line 124, sass/_common.scss */
   .page .event-takeover article.event .cta-wrapper .cta {
     width: 100%;
     margin-bottom: 0.625em;
   }
 }
 @media (min-width: 767px) {
-  /* line 136, sass/_common.scss */
+  /* line 139, sass/_common.scss */
   .page .event-takeover article.event .cta-wrapper .col {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
     text-align: right;
   }
-  /* line 139, sass/_common.scss */
+  /* line 142, sass/_common.scss */
   .page .event-takeover article.event .cta-wrapper .col:last-child {
     text-align: left;
     float: right;
     margin-right: 0;
   }
 }
-/* line 152, sass/_common.scss */
+/* line 155, sass/_common.scss */
 .cta {
   text-decoration: none;
   font-weight: bold;
@@ -617,14 +622,14 @@ ul#top-menu {
   color: #19B4E2;
   background-color: #FFFFFF;
 }
-/* line 159, sass/_common.scss */
+/* line 162, sass/_common.scss */
 .cta.primary {
   padding: 0.5em 2em;
   font-size: 1.25em;
   line-height: 1.3;
   border-radius: 4px;
 }
-/* line 163, sass/_common.scss */
+/* line 166, sass/_common.scss */
 .cta.secondary {
   padding: 0.5em 2em;
   font-size: 1.25em;
@@ -676,7 +681,7 @@ ul#top-menu {
 /**
  * 5.0 Layout
  */
-/* line 173, sass/_common.scss */
+/* line 176, sass/_common.scss */
 .page #content.site-content {
   padding-top: 1.250em;
 }
@@ -684,7 +689,7 @@ ul#top-menu {
 /**
  * 6.0 Header
  */
-/* line 184, sass/_common.scss */
+/* line 187, sass/_common.scss */
 body header#masthead .header-bg-overlay {
   background: rgba(34, 34, 34, 0.7);
   width: 100%;
@@ -693,31 +698,31 @@ body header#masthead .header-bg-overlay {
   top: 0;
   left: 0;
 }
-/* line 192, sass/_common.scss */
+/* line 195, sass/_common.scss */
 body header#masthead .custom-header-media {
   background-image: url('/wp-content/themes/twentyseventeen-child/images/city-scape-header-media-bg.png?1500745328');
   background-size: cover;
   background-position: center;
   position: absolute;
 }
-/* line 199, sass/_common.scss */
+/* line 202, sass/_common.scss */
 body header#masthead .custom-header .site-branding {
   position: relative;
   margin: 0 !important;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-/* line 210, sass/_common.scss */
+/* line 213, sass/_common.scss */
 body.twentyseventeen-front-page header#masthead .custom-header .site-branding {
   position: relative;
   margin: 0 !important;
   padding-bottom: 100px;
 }
-/* line 219, sass/_common.scss */
+/* line 222, sass/_common.scss */
 body #main .entry-header {
   margin-bottom: 1.111em;
 }
-/* line 222, sass/_common.scss */
+/* line 225, sass/_common.scss */
 body #main .entry-title {
   font-size: 1.125em;
 }
@@ -725,7 +730,7 @@ body #main .entry-title {
 /**
  * 7.0 Footer
  */
-/* line 234, sass/_common.scss */
+/* line 237, sass/_common.scss */
 .footer-link-icons a img {
   max-width: 40px;
   height: auto;
