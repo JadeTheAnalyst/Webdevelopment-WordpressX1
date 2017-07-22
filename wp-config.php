@@ -21,7 +21,7 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-if ($_SERVER['SERVER_NAME'] === "dev.cityofpotentials.com") {
+if ($_SERVER['SERVER_NAME'] === "cityofpotentials.com" || $_SERVER['SERVER_NAME'] === "dev.cityofpotentials.com") {
 	/** MySQL hostname */
 	define('DB_HOST', 'mysql.cityofpotentials.com');
 
