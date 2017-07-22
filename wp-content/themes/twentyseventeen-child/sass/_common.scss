@@ -150,6 +150,7 @@ ul#top-menu{
 
 
 .cta{ 
+    text-decoration: none;
     @extend .btn;
     font-weight:bold;
     @include button-size(0.5em,2em,1em,1.3,4px);

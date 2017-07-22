@@ -37,7 +37,7 @@ $post_eventbrite_id = get_field( 'eventbrite_id');
 		</div>
 
 		<div class="col">
-			<a href="/events" class="cta secondary">Learn More</a>
+			<a href="<?php echo basename(get_permalink()); ?>" class="cta secondary">Learn More</a>
 		</div>
 	</div>
 </article>
