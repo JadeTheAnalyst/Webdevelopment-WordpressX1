@@ -32,7 +32,7 @@ if ($_SERVER['SERVER_NAME'] === "cityofpotentials.com") {
 
 	/** MySQL database password */
 	define('DB_PASSWORD', '2pJXbEXxjc9LykPg');
-} elseif ($_SERVER['SERVER_NAME'] === "cityofpotentials.com" || $_SERVER['SERVER_NAME'] === "dev.cityofpotentials.com") {
+} elseif ($_SERVER['SERVER_NAME'] === "dev.cityofpotentials.com") {
 	/** MySQL hostname */
 	define('DB_HOST', 'mysql.cityofpotentials.com');
 
