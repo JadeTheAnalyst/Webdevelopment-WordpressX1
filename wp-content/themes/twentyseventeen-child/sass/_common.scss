@@ -68,6 +68,9 @@ ul#top-menu{
             background-repeat-x: repeat;
             background-repeat-y: no-repeat;
             height: 73px;
+            @include breakpoint($breakpoint-xs-min $breakpoint-xs-max){
+                height:49px;
+            }
         }
         .text{
             

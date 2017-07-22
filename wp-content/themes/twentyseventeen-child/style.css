@@ -498,70 +498,76 @@ ul#top-menu {
   background-repeat-y: no-repeat;
   height: 73px;
 }
+@media (min-width: 0) and (max-width: 767px) {
+  /* line 64, sass/_common.scss */
+  .site-branding-text.blue .repeat-img {
+    height: 49px;
+  }
+}
 
 /**
  * 3.0 Header Event Takeover
  */
-/* line 82, sass/_common.scss */
+/* line 85, sass/_common.scss */
 .page .event-takeover {
   color: #FFFFFF;
   text-align: center;
 }
-/* line 88, sass/_common.scss */
+/* line 91, sass/_common.scss */
 .page .event-takeover article.event {
   border: none;
 }
-/* line 90, sass/_common.scss */
+/* line 93, sass/_common.scss */
 .page .event-takeover article.event .event-detail {
   font-size: 0.778em;
 }
-/* line 93, sass/_common.scss */
+/* line 96, sass/_common.scss */
 .page .event-takeover article.event .event-title {
   font-size: 3em;
   color: #FFFFFF;
 }
-/* line 97, sass/_common.scss */
+/* line 100, sass/_common.scss */
 .page .event-takeover article.event .event-subtitle {
   color: #FFFFFF;
   font-size: 2em;
 }
-/* line 101, sass/_common.scss */
+/* line 104, sass/_common.scss */
 .page .event-takeover article.event .event-date {
   font-size: 1em;
 }
-/* line 104, sass/_common.scss */
+/* line 107, sass/_common.scss */
 .page .event-takeover article.event .cta-wrapper {
   margin-top: 1.250em;
   overflow: auto;
 }
 
 @media (min-width: 0) and (max-width: 767px) {
-  /* line 114, sass/_common.scss */
+  /* line 117, sass/_common.scss */
   .page .event-takeover {
     font-size: 14px;
   }
-  /* line 118, sass/_common.scss */
+  /* line 121, sass/_common.scss */
   .page .event-takeover article.event .cta-wrapper .cta {
     width: 100%;
     margin-bottom: 0.625em;
   }
 }
 @media (min-width: 767px) {
-  /* line 133, sass/_common.scss */
+  /* line 136, sass/_common.scss */
   .page .event-takeover article.event .cta-wrapper .col {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
     text-align: right;
   }
-  /* line 136, sass/_common.scss */
+  /* line 139, sass/_common.scss */
   .page .event-takeover article.event .cta-wrapper .col:last-child {
     text-align: left;
     float: right;
     margin-right: 0;
   }
 }
-/* line 149, sass/_common.scss */
+/* line 152, sass/_common.scss */
 .cta {
   font-weight: bold;
   padding: 0.5em 2em;
@@ -610,14 +616,14 @@ ul#top-menu {
   color: #19B4E2;
   background-color: #FFFFFF;
 }
-/* line 155, sass/_common.scss */
+/* line 158, sass/_common.scss */
 .cta.primary {
   padding: 0.5em 2em;
   font-size: 1.25em;
   line-height: 1.3;
   border-radius: 4px;
 }
-/* line 159, sass/_common.scss */
+/* line 162, sass/_common.scss */
 .cta.secondary {
   padding: 0.5em 2em;
   font-size: 1.25em;
@@ -669,7 +675,7 @@ ul#top-menu {
 /**
  * 5.0 Layout
  */
-/* line 169, sass/_common.scss */
+/* line 172, sass/_common.scss */
 .page #content.site-content {
   padding-top: 1.250em;
 }
@@ -677,7 +683,7 @@ ul#top-menu {
 /**
  * 6.0 Header
  */
-/* line 180, sass/_common.scss */
+/* line 183, sass/_common.scss */
 body header#masthead .header-bg-overlay {
   background: rgba(34, 34, 34, 0.7);
   width: 100%;
@@ -686,31 +692,31 @@ body header#masthead .header-bg-overlay {
   top: 0;
   left: 0;
 }
-/* line 188, sass/_common.scss */
+/* line 191, sass/_common.scss */
 body header#masthead .custom-header-media {
   background-image: url('/wp-content/themes/twentyseventeen-child/images/city-scape-header-media-bg.png?1500745328');
   background-size: cover;
   background-position: center;
   position: absolute;
 }
-/* line 195, sass/_common.scss */
+/* line 198, sass/_common.scss */
 body header#masthead .custom-header .site-branding {
   position: relative;
   margin: 0 !important;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-/* line 206, sass/_common.scss */
+/* line 209, sass/_common.scss */
 body.twentyseventeen-front-page header#masthead .custom-header .site-branding {
   position: relative;
   margin: 0 !important;
   padding-bottom: 100px;
 }
-/* line 215, sass/_common.scss */
+/* line 218, sass/_common.scss */
 body #main .entry-header {
   margin-bottom: 1.111em;
 }
-/* line 218, sass/_common.scss */
+/* line 221, sass/_common.scss */
 body #main .entry-title {
   font-size: 1.125em;
 }
@@ -718,7 +724,7 @@ body #main .entry-title {
 /**
  * 7.0 Footer
  */
-/* line 230, sass/_common.scss */
+/* line 233, sass/_common.scss */
 .footer-link-icons a img {
   max-width: 40px;
   height: auto;
