@@ -21,18 +21,7 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-if ($_SERVER['SERVER_NAME'] === "192.168.33.10") {
-	/** MySQL hostname */
-	define('DB_HOST', 'localhost');
-
-	define('DB_NAME', 'cityop_wordpress');
-
-	/** MySQL database username */
-	define('DB_USER', 'root');
-
-	/** MySQL database password */
-	define('DB_PASSWORD', 'root');
-} else{
+if ($_SERVER['SERVER_NAME'] === "dev.cityofpotentials.com") {
 	/** MySQL hostname */
 	define('DB_HOST', 'mysql.cityofpotentials.com');
 
@@ -43,6 +32,16 @@ if ($_SERVER['SERVER_NAME'] === "192.168.33.10") {
 
 	/** MySQL database password */
 	define('DB_PASSWORD', '2pJXbEXxjc9LykPg');
+} else{
+	define('DB_HOST', 'localhost');
+
+	define('DB_NAME', 'cityopdb');
+
+	/** MySQL database username */
+	define('DB_USER', 'root');
+
+	/** MySQL database password */
+	define('DB_PASSWORD', 'root');
 }
 
 /** Database Charset to use in creating database tables. */

@@ -30,9 +30,22 @@ a{
     text-decoration: underline;
 }
 
+body #main .entry-content .entry-title{
+    padding: 0.67em 0;
+    margin: 1.111em 0;
+}
+
 /**
  * 2.0 Post/Page Headers
  */
+
+ul#top-menu{
+    text-align:center;
+}
+
+#masthead .wrap{
+    text-align:center;
+}
 
 .custom-header-media:before{
     background:transparent;
