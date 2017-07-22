@@ -496,12 +496,12 @@ ul#top-menu {
   background-position: bottom;
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
-  height: 73px;
+  height: 71px;
 }
 @media (min-width: 0) and (max-width: 767px) {
   /* line 64, sass/_common.scss */
   .site-branding-text.blue .repeat-img {
-    height: 49px;
+    height: 47px;
   }
 }
 
