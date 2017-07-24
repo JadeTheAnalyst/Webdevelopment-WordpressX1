@@ -36,8 +36,6 @@ global $twentyseventeencounter;
 					the_title( '<h2 class="entry-title">', '</h2>' );
 				}
 				?>
-
-				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 				
 			</header><!-- .entry-header -->
 
