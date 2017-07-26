@@ -18,6 +18,15 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Providing consistent support and skill development for people interested in reaching their potential. Based on John C. Maxwell materials and facilitated by one of his certified team members, Jade Jalali.">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="City Of Potentials">
+<meta property="og:url" content="http://cityofpotentials.com">
+<meta property="og:image" content="http://cityofpotentials.com/wp-content/themes/twentyseventeen-child/images/city-of-potentials-logo.png">
+<meta property="business:contact_data:street_address" content="">
+<meta property="business:contact_data:locality" content="">
+<meta property="business:contact_data:region" content="">
+<meta property="business:contact_data:postal_code" content="">
+<meta property="business:contact_data:country_name" content="">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
