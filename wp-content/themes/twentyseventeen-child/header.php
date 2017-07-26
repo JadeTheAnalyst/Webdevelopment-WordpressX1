@@ -17,7 +17,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Providing consistent support and skill development for people interested in reaching their potential based on John C. Maxwell materials. Facilitated by one of his certified team members, Jade Jalali.">
+<meta name="description" content="Providing consistent support and skill development for people interested in reaching their potential. Based on John C. Maxwell materials and facilitated by one of his certified team members, Jade Jalali.">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
