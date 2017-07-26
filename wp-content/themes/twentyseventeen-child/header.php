@@ -21,12 +21,7 @@
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="City Of Potentials">
 <meta property="og:url" content="http://cityofpotentials.com">
-<meta property="og:image" content="http://cityofpotentials.com/wp-content/themes/twentyseventeen-child/images/city-of-potentials-logo.png">
-<meta property="business:contact_data:street_address" content="">
-<meta property="business:contact_data:locality" content="">
-<meta property="business:contact_data:region" content="">
-<meta property="business:contact_data:postal_code" content="">
-<meta property="business:contact_data:country_name" content="">
+<meta property="og:image" content="http://cityofpotentials.com/wp-content/themes/twentyseventeen-child/images/city-of-potentials-logo-og-size.png">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
