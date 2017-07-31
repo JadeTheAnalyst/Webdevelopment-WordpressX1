@@ -32,7 +32,9 @@ global $twentyseventeencounter;
 			<header class="entry-header">
 				<?php if ( $post->post_name === 'events-front-page-panel' ) { ?>
 					<h2 class="entry-title">Upcoming Events</h2>
-				<?php } else{
+				<?php } elseif ( $post->post_name === 'about-front-page-panel' ) { ?>
+					<h2 class="entry-title">About</h2>
+				<?php } else {
 					the_title( '<h2 class="entry-title">', '</h2>' );
 				}
 				?>
