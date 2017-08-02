@@ -23,6 +23,8 @@
 <meta property="og:url" content="http://cityofpotentials.com">
 <meta property="og:image" content="http://cityofpotentials.com/wp-content/themes/twentyseventeen-child/images/city-of-potentials-logo-og-size.png">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 <?php wp_head(); ?>
 </head>
