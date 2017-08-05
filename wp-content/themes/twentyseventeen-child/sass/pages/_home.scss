@@ -1,4 +1,4 @@
-#main{
+.home{
     .post-77{
         .entry-content{
             .btn{
@@ -8,6 +8,15 @@
         .event-date, .event-time, .event-address{
             font-size:14px;
         }
+    }
+    .panel-heading{
+
+    }
+    .home-page-heading{
+        @include heading-two();
+    }
+    .the-content{
+        
     }
 	.panel-content{
 		.wrap{

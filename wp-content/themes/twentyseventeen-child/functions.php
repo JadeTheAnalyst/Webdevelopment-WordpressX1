@@ -10,7 +10,7 @@ function childtheme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
-add_action( 'wp_enqueue_scripts', 'childtheme_enqueue_styles' );
+// add_action( 'wp_enqueue_scripts', 'childtheme_enqueue_styles' );
 
 /**
  * Get rid of the sidebar styling on the blog page
@@ -35,6 +35,10 @@ function childtheme_body_classes( $classes ) {
 	if ( !is_front_page() && is_home() && in_array('blog', $classes)) {
 		unset($classes[array_search('blog',$classes)]);
 	}
+
+    global $post;
+    $post_slug=$post->post_name;
+    $classes[] = $post_slug;
 
 	return $classes;
 }

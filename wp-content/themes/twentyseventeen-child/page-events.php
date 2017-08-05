@@ -16,7 +16,7 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
             <header class="entry-header">
-                <h2 class="entry-title">Upcoming Events</h2>
+                <h1 class="panel-heading">Upcoming Events</h1>
             </header><!-- .entry-header -->
             <?php
             $post_query = query_promotable_events();

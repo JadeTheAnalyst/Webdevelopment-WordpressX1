@@ -26,7 +26,7 @@ $post_content = get_the_content();
 ?>
 <article class="event" id="event-<?= $post->post_name;?>">
 
-	<h1 class="event-title"><?php echo $post->post_title;?></h1>
+	<h2 class="event-title"><?php echo $post->post_title;?></h2>
 	
 	<?php if ($post_formatted_date != ''){?>
 	<div class="event-date"><?= $post_formatted_date;?></div>

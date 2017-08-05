@@ -1,10 +1,19 @@
-// Screen
-// ======
+//VENDORS
 @import "bootstrap3";
 @import "override-parent-style";
 @import "grids";
 @import "breakpoint";
+@import "normalize";
+
+//CONFIG
 @import "variables";
+@import "functions";
+@import "mixins";
+
+//STYLES
+@import "twenty-seventeen-chosen-styles";
+@import "layout";
+@import "typography";
 @import "common";
 @import "pages/home";
 @import "pages/events";

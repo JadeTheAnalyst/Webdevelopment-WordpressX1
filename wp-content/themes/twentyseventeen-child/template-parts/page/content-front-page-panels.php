@@ -29,19 +29,19 @@ global $twentyseventeencounter;
 
 	<div class="panel-content">
 		<div class="wrap">
-			<header class="entry-header">
+			<header>
 				<?php if ( $post->post_name === 'events-front-page-panel' ) { ?>
-					<h2 class="entry-title">Upcoming Events</h2>
+					<div class="panel-heading">Upcoming Events</div>
 				<?php } elseif ( $post->post_name === 'about-front-page-panel' ) { ?>
-					<h2 class="entry-title">About</h2>
+					<div class="panel-heading">About</div>
 				<?php } else {
-					the_title( '<h2 class="entry-title">', '</h2>' );
+					the_title( '<div class="panel-heading">', '</div>' );
 				}
 				?>
 				
 			</header><!-- .entry-header -->
 
-			<div class="entry-content">
+			<div class="the-content">
 				<?php
 					/* translators: %s: Name of current post */
 					the_content( sprintf(

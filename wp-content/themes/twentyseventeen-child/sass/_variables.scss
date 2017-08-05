@@ -1,9 +1,43 @@
+//COLOURS
 $blue:#19B4E2;
 $green:#5eff42;
 $white:#FFFFFF;
 $black:#222222;
 
-//breakpoints
+//BREAKPOINTS
+//xs
 $breakpoint-xs-min: 0;
 $breakpoint-xs-max:767px;
+
+//sm
 $breakpoint-sm-min: 768px;
+$breakpoint-sm-max: 991px;
+$breakpoint-sm-color: #c3d08b;
+
+//md
+$breakpoint-md-min: 992px;
+$breakpoint-md-max: 1199px;
+$breakpoint-md-color:#fadd9b;
+
+//lg
+$breakpoint-lg-min: 1200px;
+$breakpoint-lg-max:1000000px; //1 million!
+$breakpoint-lg-color:#f8cc9d;
+
+//HEADINGS
+$h1-font-size: 42px;
+$h2-font-size: 36px;
+$h3-font-size: 24px;
+$h4-font-size: 18px;
+$h5-font-size: 13px;
+$h6-font-size: 10px;
+
+$h1-color: $black;
+$h2-color: $black;
+$h3-color: $black;
+$h4-color: $black;
+$h5-color: $black;
+$h6-color: $black;
+
+//GRID
+$base-grid-size: 6px;

@@ -91,9 +91,9 @@
 
 			// The margin should be applied to different elements on front-page or home vs interior pages.
 			if ( isFrontPage ) {
-				$branding.css( 'margin-bottom', navigationOuterHeight );
+				// $branding.css( 'margin-bottom', navigationOuterHeight );
 			} else {
-				$customHeader.css( 'margin-bottom', navigationOuterHeight );
+				// $customHeader.css( 'margin-bottom', navigationOuterHeight );
 			}
 
 		} else {

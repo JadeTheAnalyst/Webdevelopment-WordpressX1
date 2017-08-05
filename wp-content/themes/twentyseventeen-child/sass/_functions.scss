@@ -1,0 +1,9 @@
+@function grid-space($multiplied-by, $unit: px){
+	@if($unit == px){
+		@return round($base-grid-size * $multiplied-by);
+	}
+	@else{
+		@return $base-grid-size * $multiplied-by / $base-font-size + $unit;
+	}
+    
+}

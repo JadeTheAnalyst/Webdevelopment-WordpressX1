@@ -1,0 +1,99 @@
+//HEADINGS
+
+@mixin heading-one(){
+    font-size:$h1-font-size;
+    color:$h1-color;
+    font-weight:600;
+    line-height:grid-space(7);
+    margin:grid-space(5) 0;
+    &.with-lead{
+ 
+    }
+    &.lead{
+        
+    }
+}
+
+@mixin heading-two(){
+    font-size:$h2-font-size;
+    color:$h2-color;
+    font-weight:600;
+    line-height:grid-space(8);
+    margin:grid-space(4) 0;
+    &.with-lead{
+
+    }
+    &.lead{
+
+    }
+}
+
+@mixin heading-three(){
+    font-size:$h3-font-size;
+    color:$h3-color;
+    font-weight:600;
+    line-height:grid-space(5);
+    margin:grid-space(3) 0;
+    &.with-lead{
+
+    }
+    &.lead{
+
+    }
+}
+
+@mixin heading-four(){
+    font-size:$h4-font-size;
+    color:$h4-color;
+    font-weight:600;
+    line-height:grid-space(4);
+    margin:grid-space(2) 0;
+    &.with-lead{
+
+    }
+    &.lead{
+
+    }
+}
+
+@mixin heading-five(){
+    font-size:$h5-font-size;
+    color:$h5-color;
+    font-weight:600;
+    line-height:grid-space(2.166);
+    margin:grid-space(2.166) 0;
+    &.with-lead{
+
+    }
+    &.lead{
+
+    }
+}
+
+@mixin heading-six(){
+    font-size:$h6-font-size;
+    color:$h6-color;
+    font-weight:600;
+    line-height:grid-space(1.666);
+    margin:grid-space(1.666) 0;
+    &.with-lead{
+
+    }
+    &.lead{
+
+    }
+}
+
+@mixin body-copy(){
+    font-size:grid-space(2.666);
+    color:$body-copy-color;
+    font-weight:400;
+    margin:grid-space(2) 0;
+}
+//add extra margin to bottom of last copy tag. useful when there is another heading after last tag tag
+@mixin body-copy-last(){
+    font-size:grid-space(2.666);
+    color:$body-copy-color;
+    font-weight:400;
+    margin:grid-space(2) 0 grid-space(5);
+}

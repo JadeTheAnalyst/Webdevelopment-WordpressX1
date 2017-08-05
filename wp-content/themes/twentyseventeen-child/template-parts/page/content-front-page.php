@@ -30,7 +30,8 @@
 
 	<div class="panel-content">
 		<div class="wrap">
-			<div class="entry-content">
+			<div class="the-content">
+				<h1 class="home-page-heading text-center">A whole CITY of people reaching their POTENTIAL</h1>
 				<?php
 					/* translators: %s: Name of current post */
 					the_content( sprintf(
@@ -38,8 +39,7 @@
 						get_the_title()
 					) );
 				?>
-			</div><!-- .entry-content -->
-
+			</div>
 		</div><!-- .wrap -->
 	</div><!-- .panel-content -->
 

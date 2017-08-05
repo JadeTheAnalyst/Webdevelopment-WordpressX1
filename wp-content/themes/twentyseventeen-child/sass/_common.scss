@@ -101,8 +101,8 @@ ul#top-menu{
                 color:$white;
             }
             .event-subtitle{
+                @include heading-three();
                 color:$white;
-                font-size:2em;
             }
             .event-date{
                 font-size:1em;

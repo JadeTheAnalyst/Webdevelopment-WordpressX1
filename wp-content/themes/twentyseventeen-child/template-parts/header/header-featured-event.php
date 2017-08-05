@@ -19,14 +19,14 @@ $post_eventbrite_id = get_field( 'eventbrite_id');
 	<div class="repeat-img"></div>
 
 	<div class="text">
-		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>					
+		<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>					
 		<p class="site-description">presents&hellip;</p>
 	</div>
 </div>
 
 <article class="event" id="event-<?= $post->post_name;?>">
-	<h1 class="event-title"><?php echo $post->post_title;?></h1>
-<!-- 	<h2 class="event-subtitle">by John C. Maxwell</h2> -->
+	<div class="event-title"><?php echo $post->post_title;?></div>
+<!-- 	<div class="event-subtitle">by John C. Maxwell</div> -->
 	
 	<?php if($post_formatted_date != ''){?>
 	<div class="event-detail event-date"><?=$post_formatted_date;?></div>
