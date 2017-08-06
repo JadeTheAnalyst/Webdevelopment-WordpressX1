@@ -15,8 +15,8 @@ get_header(); ?>
 <div class="wrap">
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-            <header class="entry-header">
-                <h1 class="panel-heading">Upcoming Events</h1>
+            <header class="">
+                <h1 class="page-heading">Upcoming Events</h1>
             </header><!-- .entry-header -->
             <?php
             $post_query = query_promotable_events();
@@ -24,7 +24,7 @@ get_header(); ?>
             if($post_query->have_posts() ) {
                 while($post_query->have_posts() ) {
                     $post_query->the_post();
-                    get_template_part( 'template-parts/post/content-event', $post->post_name);
+                    get_template_part( 'template-parts/post/content', $post->post_name);
                 }
             }
 

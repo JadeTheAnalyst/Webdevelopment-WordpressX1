@@ -42,4 +42,8 @@
             }
         }
 	}
+    .event-title{
+        @include heading-four();
+        color:$blue;
+    }
 } 

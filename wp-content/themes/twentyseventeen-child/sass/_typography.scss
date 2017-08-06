@@ -1,3 +1,6 @@
+html{
+	line-height:1.5;
+}
 h1, .heading-one{
 	@include heading-one();
 }
@@ -22,11 +25,35 @@ h6, .heading-six{
 	@include heading-six();
 }
 
+p{
+	@include body-copy();
+}
+
+//provide extra margin to the bottom of the last p element in a content section to provide space for the next content section
+.end-p{
+	@include body-copy-last();
+}
+
+.page-heading{
+	
+	@include heading-one();
+}
+
 .panel-heading{
+	
 	@include heading-three();
 }
 
 .event-title{
+	
+}
+
+.class-heading{
 	@include heading-three();
-	color:$blue;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5em 1em;
+  padding: 0;
 }

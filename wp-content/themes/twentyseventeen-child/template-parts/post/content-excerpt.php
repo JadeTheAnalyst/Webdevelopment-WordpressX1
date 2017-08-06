@@ -1,12 +1,13 @@
 <?php
 $post_date = get_field( 'event_date');
-try {
-    $post_date = new DateTime($post_date);
-    $post_formatted_date = $post_date->format('F j, Y');
-} catch (Exception $e) {
-    echo $e->getMessage();
-    exit(1);
-}
+$post_formatted_date = $post_date;
+// try {
+//     $post_date = new DateTime($post_date);
+//     $post_formatted_date = $post_date->format('F j, Y');
+// } catch (Exception $e) {
+//     echo $e->getMessage();
+//     exit(1);
+// }
 $post_start_time = get_field( 'event_start_time');
 $post_end_time = get_field( 'event_end_time');
 $post_address = get_field('event_location');

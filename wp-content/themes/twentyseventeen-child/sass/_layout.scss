@@ -22,3 +22,25 @@ body {
 .text-center{
 	text-align:center;
 }
+
+.w100{
+	width:100%;
+}
+
+.row{
+	overflow:auto;
+}
+
+.wrap{
+	max-width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:grid-space(4);
+	padding-right:grid-space(4);
+}
+
+@include breakpoint($breakpoint-sm-min){
+	.wrap{
+		@include container($breakpoint-sm-min);
+	}
+}

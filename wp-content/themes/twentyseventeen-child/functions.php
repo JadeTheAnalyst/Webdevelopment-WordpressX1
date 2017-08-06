@@ -75,18 +75,18 @@ function query_promotable_events(){
     $args = array(
         'post_type' => 'post',
         'category_name' => 'events',
-        'meta_query'    => array(
-            array(
-                'key'       => 'event_date',
-                'value'     => $date_now,
-                'compare'   => '>=',
-                'type' => 'DATETIME',
-            ),
-        ),
-        'meta_key' => 'event_date',
-        'meta_type' => 'DATETIME',
-        'orderby' => 'meta_value',
-        'order' => 'ASC',
+        // 'meta_query'    => array(
+        //     array(
+        //         'key'       => 'event_date',
+        //         'value'     => $date_now,
+        //         'compare'   => '>=',
+        //         'type' => 'DATETIME',
+        //     ),
+        // ),
+        // 'meta_key' => 'event_date',
+        // 'meta_type' => 'DATETIME',
+        // 'orderby' => 'meta_value',
+        // 'order' => 'ASC',
     );
     $post_query = new WP_Query($args);
     return $post_query;
@@ -98,21 +98,24 @@ function query_front_page_events_panel(){
         'posts_per_page' => 3,
         'post_type' => 'post',
         'category_name' => 'events',
-        'meta_query'    => array(
-            array(
-                'key'       => 'event_date',
-                'value'     => $date_now,
-                'compare'   => '>=',
-                'type' => 'DATETIME',
-            ),
-        ),
-        'meta_key' => 'event_date',
-        'meta_type' => 'DATETIME',
-        'orderby' => 'meta_value',
-        'order' => 'ASC',
+        // 'meta_query'    => array(
+        //     array(
+        //         'key'       => 'event_date',
+        //         'value'     => $date_now,
+        //         'compare'   => '>=',
+        //         'type' => 'DATETIME',
+        //     ),
+        // ),
+        // 'meta_key' => 'event_date',
+        // 'meta_type' => 'DATETIME',
+        // 'orderby' => 'meta_value',
+        // 'order' => 'ASC',
     );
     $post_query = new WP_Query($args);
     return $post_query;
 }
 
+function image_path($image){
+    return bloginfo('template_directory') . "/images/" . $image;
+}
 ?>

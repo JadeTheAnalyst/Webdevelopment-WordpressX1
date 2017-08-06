@@ -280,12 +280,6 @@ hr {
 8.0 Lists
 --------------------------------------------------------------*/
 
-ul,
-ol {
-	margin: 0 0 1.5em;
-	padding: 0;
-}
-
 ul {
 	list-style: disc;
 }
@@ -373,12 +367,12 @@ a:active {
 .site-footer .widget-area a,
 .posts-navigation a,
 .widget_authors a strong {
-	-webkit-box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
-	box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
-	-webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
-	transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
-	transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
-	transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+	// -webkit-box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
+	// box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
+	// -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+	// transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+	// transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+	// transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
 }
 
 .entry-title a,
@@ -510,7 +504,7 @@ a:hover .nav-title,
 }
 
 .navigation-top .wrap {
-	max-width: 1000px;
+	// max-width: 1000px;
 	padding: 0;
 }
 
@@ -719,9 +713,9 @@ body {
 .wrap {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 700px;
-	padding-left: 2em;
-	padding-right: 2em;
+	// max-width: 700px;
+	// padding-left: 2em;
+	// padding-right: 2em;
 }
 
 .wrap:after {
@@ -1053,7 +1047,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 
 .site-content {
-	padding: 2.5em 0 0;
+	// padding: 2.5em 0 0;
 }
 
 /*--------------------------------------------------------------
@@ -1264,7 +1258,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 .archive.page-one-column:not(.has-sidebar) #primary {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 740px;
+	// max-width: 740px;
 }
 
 .single-featured-image-header {
@@ -1458,7 +1452,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .page:not(.home) #content {
-	padding-bottom: 1.5em;
+	// padding-bottom: 1.5em;
 }
 
 /* 404 page */
@@ -2317,54 +2311,6 @@ object {
 
 @media screen and (min-width: 30em) {
 
-	/* Typography */
-
-	body,
-	button,
-	input,
-	select,
-	textarea {
-		font-size: 18px;
-		font-size: 1.125rem;
-	}
-
-	h1 {
-		font-size: 30px;
-		font-size: 1.875rem;
-	}
-
-	h2,
-	.page .panel-content .recent-posts .entry-title {
-		font-size: 26px;
-		font-size: 1.625rem;
-	}
-
-	h3 {
-		font-size: 22px;
-		font-size: 1.375rem;
-	}
-
-	h4 {
-		font-size: 18px;
-		font-size: 1.125rem;
-	}
-
-	h5 {
-		font-size: 13px;
-		font-size: 0.8125rem;
-	}
-
-	h6 {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-
-	.entry-content blockquote.alignleft,
-	.entry-content blockquote.alignright {
-		font-size: 14px;
-		font-size: 0.875rem;
-	}
-
 	/* Fix image alignment */
 	img.alignleft {
 		float: left;
@@ -2390,7 +2336,7 @@ object {
 	}
 
 	.page-one-column .panel-content .wrap {
-		max-width: 740px;
+		// max-width: 740px;
 	}
 
 	.panel-content .entry-header {
@@ -2447,28 +2393,13 @@ object {
 
 	/* Typography */
 
-	body,
-	button,
-	input,
-	select,
-	textarea {
-		font-size: 16px;
-		font-size: 1rem;
-		line-height: 1.5;
-	}
-
-	.entry-content blockquote.alignleft,
-	.entry-content blockquote.alignright {
-		font-size: 13px;
-		font-size: 0.8125rem;
-	}
 
 	/* Layout */
 
 	.wrap {
-		max-width: 1000px;
-		padding-left: 3em;
-		padding-right: 3em;
+		// max-width: 1000px;
+		// padding-left: 3em;
+		// padding-right: 3em;
 	}
 
 	.has-sidebar:not(.error404) #primary {
@@ -2575,9 +2506,9 @@ object {
 	}
 
 	.navigation-top .wrap {
-		max-width: 1000px;
+		// max-width: 1000px;
 		/* The font size is 14px here and we need 50px padding in ems */
-		padding: 0.75em 3.4166666666667em;
+		// padding: 0.75em 3.4166666666667em;
 	}
 
 	.navigation-top nav {
@@ -2896,7 +2827,7 @@ object {
 	/* Posts */
 
 	.site-content {
-		padding: 5.5em 0 0;
+		// padding: 5.5em 0 0;
 	}
 
 	.single-post .entry-title,
@@ -3058,7 +2989,7 @@ object {
 	}
 
 	.page:not(.home) #content {
-		padding-bottom: 3.25em;
+		// padding-bottom: 3.25em;
 	}
 
 	/* 404 page */
@@ -3190,7 +3121,7 @@ object {
 
 	/* Navigation */
 	.navigation-top .wrap {
-		padding: 0.75em 2em;
+		// padding: 0.75em 2em;
 	}
 
 	.navigation-top nav {
@@ -3337,9 +3268,9 @@ object {
 	/* Layout */
 
 	.wrap {
-		padding-left: 5% !important;
-		padding-right: 5% !important;
-		max-width: none;
+		// padding-left: 5% !important;
+		// padding-right: 5% !important;
+		// max-width: none;
 	}
 
 	/* Site Branding */

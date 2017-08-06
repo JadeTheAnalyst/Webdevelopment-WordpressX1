@@ -97,7 +97,7 @@ ul#top-menu{
                 font-size:0.778em;
             }
             .event-title{
-                font-size:3em;
+                @include heading-one();
                 color:$white;
             }
             .event-subtitle{
@@ -174,7 +174,7 @@ ul#top-menu{
  */
 .page{
     #content.site-content{
-        padding-top:1.250em;
+        // padding-top:1.250em;
     }
 }
 
@@ -207,23 +207,35 @@ body{
             }
         }
     }
-    &.twentyseventeen-front-page{
-        header#masthead{
-            .custom-header{
-                .site-branding{
-                    position:relative;
-                    margin:0 !important;
-                    padding-bottom:100px;
-                }
+    
+    header#masthead{
+        .custom-header{
+            .site-branding{
+                position:relative;
+                margin:0 !important;
+                
             }
         }
     }
+
     #main{
         .entry-header{
             margin-bottom:1.111em;
         }
         .entry-title{
             font-size:1.125em;
+        }
+    }
+}
+
+@include breakpoint($breakpoint-sm-min){
+    body{
+        header#masthead{
+            .custom-header{
+                .site-branding{
+                    padding-bottom:72px;
+                }
+            }
         }
     }
 }
@@ -235,8 +247,7 @@ body{
 .footer-link-icons{
     a{
         img{
-            max-width:40px;
-            height:auto;
+            max-height:100px;
         }
     }
 }

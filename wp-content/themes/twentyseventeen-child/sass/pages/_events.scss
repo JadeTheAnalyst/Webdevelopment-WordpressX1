@@ -1,4 +1,4 @@
-.events{
+.events, .single-post{
 	margin-bottom: 30px;	
 	.event-subtitle{
 		color:$black;
@@ -20,5 +20,20 @@
 	}
 	.event-tickets-iframe{
 		margin-top:0.625em;
+	}
+	.event-title{
+		@include heading-three();
+	}
+	&.single-post{
+		.event-title{
+			@include heading-one();
+		}
+	}
+	
+	.event-date,.event-time,.event-address,.event-duration,.event-cost{
+		@include heading-four();
+		span{
+			font-weight:400;
+		}
 	}
 }

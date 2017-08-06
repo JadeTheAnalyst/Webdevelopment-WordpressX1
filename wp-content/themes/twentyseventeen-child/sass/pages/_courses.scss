@@ -1,0 +1,37 @@
+.class-panel{
+	overflow:auto;
+	margin-bottom:grid-space(6);
+}
+
+.class-header{
+
+}
+
+.class-heading{
+
+}
+
+.class-image{
+
+}
+
+.class-description{
+
+}
+
+@include breakpoint($breakpoint-sm-min){
+	
+	.class-heading{
+	
+	}
+	.has-image{
+		.class-image{
+			@include span(4 of 12);
+		}
+
+		.class-description{
+			@include span(8 of 12 last);
+		} 
+	}
+
+}
