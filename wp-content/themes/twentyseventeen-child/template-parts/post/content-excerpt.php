@@ -30,8 +30,10 @@ $post_eventbrite_id = get_field('eventbrite_id');
 	<?php } ?>
 
 	<?php if($post_eventbrite_id != ''){ ?>
-	<a href="https://www.eventbrite.com/e/<?= $post_eventbrite_id;?>" target="_blank" class="">Register Now</a>
-	 |
-	 <a href="<?php echo basename(get_permalink()); ?>" class="">Learn More</a>
+	<p>
+		<a href="https://www.eventbrite.com/e/<?= $post_eventbrite_id;?>" target="_blank" class="">Register Now</a>
+		 |
+		 <a href="<?php echo basename(get_permalink()); ?>" class="">Learn More</a>
+	 </p>
 	 <?php } ?>
 </article>
