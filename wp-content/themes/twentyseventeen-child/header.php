@@ -17,7 +17,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Providing consistent support and skill development for people interested in reaching their potential. Based on John C. Maxwell materials and facilitated by one of his certified team members, Jade Jalali.">
+<meta name="description" content="At City of Potentials we provide consistent support and skill development for people interested in reaching their potential. We offer a variety of ways for development including private events, mastermind groups, public courses and casual meetups! Based on John C. Maxwell materials and facilitated by one of his certified team members, Jade Jalali.">
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="City Of Potentials">
 <meta property="og:url" content="http://cityofpotentials.com">
