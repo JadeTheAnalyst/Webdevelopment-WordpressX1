@@ -53,31 +53,27 @@ global $twentyseventeencounter;
 
 			<?php
 			// Show recent blog posts if is blog posts page (Note that get_option returns a string, so we're casting the result as an int).
-			if ( $post->post_name === 'events-front-page-panel' ) : ?>
-
-				<?php // Show four most recent posts.
-				$recent_posts = new WP_Query( array(
-					'posts_per_page'      => 3,
-					'post_status'         => 'publish',
-					'ignore_sticky_posts' => true,
-					'no_found_rows'       => true,
-				) );
-				?>
-
-		 		<?php if ( $recent_posts->have_posts() ) : ?>
-
-					<div class="recent-posts">
-
-						<?php
-						while ( $recent_posts->have_posts() ) : $recent_posts->the_post();
-							get_template_part( 'template-parts/post/content', 'excerpt' );
-						endwhile;
-						wp_reset_postdata();
-						?>
-					</div><!-- .recent-posts -->
-				<?php endif; ?>
-			<?php endif; ?>
-
+			if ( $post->post_name === 'events-front-page-panel' ) { ?>
+				<div class="recent-posts">
+				<?php
+	            $recent_posts = query_promotable_events();
+	            
+	            if($recent_posts->have_posts() ) {
+	                while($recent_posts->have_posts() ) {
+	                    $recent_posts->the_post();
+	                    get_template_part( 'template-parts/post/content', 'excerpt' );
+	                }
+	                wp_reset_postdata();
+        		} else {
+        		?>
+        			No upcoming events.
+        		<?php
+        		}
+        		?>
+        		</div><!-- .recent-posts -->
+        		<?php
+        	}
+        	?>
 		</div><!-- .wrap -->
 	</div><!-- .panel-content -->
 

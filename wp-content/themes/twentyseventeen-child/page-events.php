@@ -26,6 +26,10 @@ get_header(); ?>
                     $post_query->the_post();
                     get_template_part( 'template-parts/post/content', $post->post_name);
                 }
+            } else{
+            ?>
+            No upcoming events.
+            <?php
             }
 
             // while ( have_posts() ) : the_post();

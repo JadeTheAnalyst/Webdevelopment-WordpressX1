@@ -45,36 +45,40 @@ function childtheme_body_classes( $classes ) {
 add_filter( 'body_class', 'childtheme_body_classes', 11 );
 
 function query_featured_event(){
-    $date_now = date('Y-m-d H:i:s');
+    $datetime_now = new DateTime(null, new DateTimeZone('America/Regina'));
+    $date_now = $datetime_now->format('Y-m-d');
     $args = array(
         'post_type' => 'post',
         'category_name' => 'events',
+        'post_status' => 'publish',
         'meta_query'    => array(
-            array(
-                'key'       => 'event_date',
-                'value'     => $date_now,
-                'compare'   => '>=',
-                'type' => 'DATETIME',
-            ),
+            // array(
+            //     'key'       => 'event_date',
+            //     'value'     => $date_now,
+            //     'compare'   => '>=',
+            //     'type' => 'DATETIME',
+            // ),
             array(
                 'key'       => 'featured',
-                'value'     => true,
+                'value'     => 1,
             ),
         ),
-        'meta_key' => 'event_date',
-        'meta_type' => 'DATETIME',
-        'orderby' => 'meta_value',
-        'order' => 'ASC',
+        // 'meta_key' => 'event_date',
+        // 'meta_type' => 'DATETIME',
+        // 'orderby' => 'meta_value',
+        // 'order' => 'ASC',
     );
     $post_query = new WP_Query($args);
     return $post_query;
 }
 
 function query_promotable_events(){
-	$date_now = date('Y-m-d H:i:s');
+	$datetime_now = new DateTime(null, new DateTimeZone('America/Regina'));
+    $date_now = $datetime_now->format('Y-m-d');
     $args = array(
         'post_type' => 'post',
         'category_name' => 'events',
+        'post_status' => 'publish',
         // 'meta_query'    => array(
         //     array(
         //         'key'       => 'event_date',
@@ -93,11 +97,13 @@ function query_promotable_events(){
 }
 
 function query_front_page_events_panel(){
-    $date_now = date('Y-m-d H:i:s');
+    $datetime_now = new DateTime(null, new DateTimeZone('America/Regina'));
+    $date_now = $datetime_now->format('Y-m-d');
     $args = array(
         'posts_per_page' => 3,
         'post_type' => 'post',
         'category_name' => 'events',
+        'post_status' => 'publish'
         // 'meta_query'    => array(
         //     array(
         //         'key'       => 'event_date',

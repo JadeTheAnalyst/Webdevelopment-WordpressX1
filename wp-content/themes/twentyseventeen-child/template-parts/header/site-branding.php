@@ -17,7 +17,7 @@
 		the_custom_logo();
 		//display event to promote in the header area if there is one
 		$page_slug = $post->post_name;
-		$post_query = query_promotable_events();
+		$post_query = query_featured_event();
         if($post_query->have_posts() && ($page_slug == 'home'/* || $page_slug == 'events'*/)) :
         ?>
     	<div class="event-takeover">
