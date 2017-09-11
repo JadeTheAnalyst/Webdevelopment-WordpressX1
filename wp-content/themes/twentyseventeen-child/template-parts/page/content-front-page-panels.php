@@ -66,7 +66,7 @@ global $twentyseventeencounter;
 	                wp_reset_postdata();
         		} else {
         		?>
-        			No upcoming events.
+        			
         		<?php
         		}
         		?>
